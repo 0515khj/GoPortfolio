@@ -9,10 +9,10 @@ const BackLog = () => {
     const [currentimg , setCurrentimg] =useState(0);
 
     const img = [
-        "./assets/images/back.jpg",
-        "./assets/images/back2.jpg",
-        "./assets/images/back3.jpg",
-        "./assets/images/back4.jpg",
+        `${process.env.PUBLIC_URL}/assets/images/back.jpg`,
+        `${process.env.PUBLIC_URL}/assets/images/back2.jpg`,
+        `${process.env.PUBLIC_URL}/assets/images/back3.jpg`,
+        `${process.env.PUBLIC_URL}/assets/images/back4.jpg`,
     ];
 
     const GoPrev = ()=> {

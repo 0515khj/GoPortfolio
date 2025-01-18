@@ -8,7 +8,7 @@ const DashBoard = () => {
     const [currentimg , setCurrentimg] =useState(0);
 
     const img = [
-        "./assets/images/dash.jpg",
+        `${process.env.PUBLIC_URL}/assets/images/dash.jpg`,
     ];
 
  

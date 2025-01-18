@@ -10,7 +10,7 @@ const TeamFind = () => {
              <div className="inner">
                
                 <div className="imageWrapper">
-                  <img src="./assets/images/find_resized.jpg" alt="WBS 관련 이미지" />
+                  <img src={`${process.env.PUBLIC_URL}/assets/images/find_resized.jpg`} alt="WBS 관련 이미지" />
                 </div>
 
                 <div className='info'>

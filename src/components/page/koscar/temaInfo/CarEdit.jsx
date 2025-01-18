@@ -8,7 +8,7 @@ const CarEdit = () => {
     const [currentimg , setCurrentimg] =useState(0);
 
     const img = [
-        "./assets/images/edit.png",
+        `${process.env.PUBLIC_URL}/assets/images/edit.png`,
     ];
 
 

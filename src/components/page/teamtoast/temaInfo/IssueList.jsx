@@ -8,7 +8,7 @@ const IssueList = () => {
     const [currentimg , setCurrentimg] =useState(0);
 
     const img = [
-        "./assets/images/issue.jpg",
+        `${process.env.PUBLIC_URL}/assets/images/issue.jpg`,
     ];
 
 

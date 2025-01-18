@@ -10,7 +10,7 @@ const CarSell = () => {
              <div className="inner">
                
                 <div className="imageWrapper">
-                  <img src="./assets/images/sell.png" alt="" />
+                  <img src={`${process.env.PUBLIC_URL}/assets/images/sell.png`} alt="" />
                 </div>
 
                 <div className='info'>

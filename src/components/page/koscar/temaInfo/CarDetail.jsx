@@ -9,8 +9,8 @@ const CarDetail = () => {
     const [currentimg , setCurrentimg] =useState(0);
 
     const img = [
-        "./assets/images/detail1.png",
-        "./assets/images/detail2.png",
+        `${process.env.PUBLIC_URL}/assets/images/detail1.png`,
+        `${process.env.PUBLIC_URL}/assets/images/detail2.png`,
     ];
 
     const GoPrev = ()=> {

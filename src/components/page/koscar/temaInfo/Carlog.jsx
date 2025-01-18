@@ -10,7 +10,7 @@ const Carlog = () => {
              <div className="inner">
                
                 <div className="imageWrapper">
-                  <img src="./assets/images/carlog.png" alt="" />
+                  <img src={`${process.env.PUBLIC_URL}/assets/images/carlog.png`} alt="" />
                 </div>
 
                 <div className='info'>

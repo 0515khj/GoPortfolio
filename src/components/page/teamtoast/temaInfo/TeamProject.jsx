@@ -9,10 +9,10 @@ const TeamProject = () => {
     const [currentimg , setCurrentimg] =useState(0);
 
     const img = [
-        "./assets/images/project2.jpg",
-        "./assets/images/projectadd.jpg",
-        "./assets/images/projectedit.jpg",
-        "./assets/images/prjectdel.jpg",
+        `${process.env.PUBLIC_URL}/assets/images/project2.jpg`,
+        `${process.env.PUBLIC_URL}/assets/images/projectadd.jpg`,
+        `${process.env.PUBLIC_URL}/assets/images/projectedit.jpg`,
+        `${process.env.PUBLIC_URL}/assets/images/prjectdel.jpg`,
     ];
 
     const GoPrev = ()=> {

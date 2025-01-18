@@ -9,8 +9,8 @@ const TeamProfile = () => {
     const [currentimg , setCurrentimg] =useState(0);
 
     const img = [
-        "./assets/images/profile.jpg",
-        "./assets/images/profileFind.jpg"
+        `${process.env.PUBLIC_URL}/assets/images/profile.jpg`,
+        `${process.env.PUBLIC_URL}/assets/images/profileFind.jpg`
     ];
 
     const GoPrev = ()=> {

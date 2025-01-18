@@ -10,8 +10,8 @@ const CarProfile = () => {
     const [currentimg , setCurrentimg] =useState(0);
 
     const img = [
-        "./assets/images/mypage1.png",
-        "./assets/images/mypage2.png",
+        `${process.env.PUBLIC_URL}/assets/images/mypage1.png`,
+        `${process.env.PUBLIC_URL}/assets/images/mypage2.png`,
     ];
 
     const GoPrev = ()=> {

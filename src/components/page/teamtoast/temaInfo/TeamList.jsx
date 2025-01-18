@@ -9,8 +9,8 @@ const TeamList = () => {
     const [currentimg , setCurrentimg] =useState(0);
 
     const img = [
-        "./assets/images/teamlist.jpg",
-        "./assets/images/teamadd.jpg"
+        `${process.env.PUBLIC_URL}/assets/images/teamlist.jpg`,
+        `${process.env.PUBLIC_URL}/assets/images/teamadd.jpg`
     ];
 
     const GoPrev = ()=> {

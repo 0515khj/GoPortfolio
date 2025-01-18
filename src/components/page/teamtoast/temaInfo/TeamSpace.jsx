@@ -9,9 +9,9 @@ const TeamSpace = () => {
     const [currentimg , setCurrentimg] =useState(0);
 
     const img = [
-        "./assets/images/space.jpg",
-        "./assets/images/spaceadd.jpg",
-        "./assets/images/spaceedit.jpg",
+        `${process.env.PUBLIC_URL}/assets/images/space.jpg`,
+        `${process.env.PUBLIC_URL}/assets/images/spaceadd.jpg`,
+        `${process.env.PUBLIC_URL}/assets/images/spaceedit.jpg`,
     ];
 
     const GoPrev = ()=> {

@@ -11,7 +11,7 @@ const CarJoin = () => {
              <div className="inner">
                
                 <div className="imageWrapper">
-                  <img src="./assets/images/carjoin.png" alt="" />
+                  <img src={`${process.env.PUBLIC_URL}/assets/images/carjoin.png`} alt="" />
                 </div>
 
                 <div className='info'>

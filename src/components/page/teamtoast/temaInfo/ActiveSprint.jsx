@@ -8,7 +8,7 @@ const ActiveSprint = () => {
     const [currentimg , setCurrentimg] =useState(0);
 
     const img = [
-        "./assets/images/sprint.jpg",
+        `${process.env.PUBLIC_URL}/assets/images/sprint.jpg`,
     ];
 
     return (
