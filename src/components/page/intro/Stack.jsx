@@ -4,9 +4,7 @@ import { StackWrap } from './introStyle';
 const Stack = () => {
     
     const frontStacks = [
-        // {name: 'HTML5', img:'./assets/images/html.jpg'},
-        {name: 'HTML5', img:`${process.env.PUBLIC_URL}/assets/images/html.jpg`},
-        
+        {name: 'HTML5', img: '/GoPortfolio/assets/images/html.jpg'},
         {name: 'CSS3', img:'./assets/images/css.jpg'},
         {name: 'JavaScript', img:'./assets/images/js.jpg'},
         {name: 'TypeScript', img:'./assets/images/ts.jpg'},
