@@ -8,7 +8,7 @@ const TimeLine = () => {
     const [currentimg , setCurrentimg] =useState(0);
 
     const img = [
-        "./assets/images/time.jpg",
+        `${process.env.PUBLIC_URL}/assets/images/time.jpg`,
     ];
 
    
