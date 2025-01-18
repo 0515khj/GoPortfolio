@@ -4,28 +4,28 @@ import { StackWrap } from './introStyle';
 const Stack = () => {
     
     const frontStacks = [
-        {name: 'HTML5', img:'/assets/images/html.jpg'},
-        {name: 'CSS3', img:'/assets/images/css.jpg'},
-        {name: 'JavaScript', img:'/assets/images/js.jpg'},
-        {name: 'TypeScript', img:'/assets/images/ts.jpg'},
-        {name: 'React', img:'/assets/images/react.jpg'},
-        { name: 'Styled-Components', img: '/assets/images/style.jpg'},
-        { name: 'Recoil', img: '/assets/images/recoil.jpg'},
+        {name: 'HTML5', img:'./assets/images/html.jpg'},
+        {name: 'CSS3', img:'./assets/images/css.jpg'},
+        {name: 'JavaScript', img:'./assets/images/js.jpg'},
+        {name: 'TypeScript', img:'./assets/images/ts.jpg'},
+        {name: 'React', img:'./assets/images/react.jpg'},
+        { name: 'Styled-Components', img: './assets/images/style.jpg'},
+        { name: 'Recoil', img: './assets/images/recoil.jpg'},
     ]
     
     const backStack = [
-        {name:'Node.js', img:'/assets/images/node.jpg'},
-        {name:'Express.js', img:'/assets/images/express.jpg'},
-        {name:'Firebase', img:'/assets/images/fire.jpg'},
+        {name:'Node.js', img:'./assets/images/node.jpg'},
+        {name:'Express.js', img:'./assets/images/express.jpg'},
+        {name:'Firebase', img:'./assets/images/fire.jpg'},
     ]
 
     const database = [
-        {name:'MySQL', img:'/assets/images/mysql.jpg'},
+        {name:'MySQL', img:'./assets/images/mysql.jpg'},
     ]
     
     const Deployment = [
-        {name:'Docker', img:'/assets/images/docker.jpg'},
-        {name:'AWS', img:'/assets/images/aws.jpg'},
+        {name:'Docker', img:'./assets/images/docker.jpg'},
+        {name:'AWS', img:'./assets/images/aws.jpg'},
         
     ]
     
