@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/GoPortfolio/static/js/main.d9c485fc.js",
+    "main.js": "/GoPortfolio/static/js/main.be02c77f.js",
     "index.html": "/GoPortfolio/index.html",
-    "main.d9c485fc.js.map": "/GoPortfolio/static/js/main.d9c485fc.js.map"
+    "main.be02c77f.js.map": "/GoPortfolio/static/js/main.be02c77f.js.map"
   },
   "entrypoints": [
-    "static/js/main.d9c485fc.js"
+    "static/js/main.be02c77f.js"
   ]
 }
