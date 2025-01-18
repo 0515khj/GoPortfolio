@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import { TeamFindWrap, TeamlogWrap, TeamProfileWrap, TeamProjectWrap } from './teamInfoStyle';
+import { TeamProjectWrap } from './teamInfoStyle';
 import { Teambg } from '../Teambg';
-import { useNavigate } from 'react-router-dom';
 import { FaChevronRight ,FaChevronLeft } from "react-icons/fa";
 
 const TeamProject = () => {
@@ -10,10 +9,10 @@ const TeamProject = () => {
     const [currentimg , setCurrentimg] =useState(0);
 
     const img = [
-        "/assets/images/project2.jpg",
-        "/assets/images/projectadd.jpg",
-        "/assets/images/projectedit.jpg",
-        "/assets/images/prjectdel.jpg",
+        "./assets/images/project2.jpg",
+        "./assets/images/projectadd.jpg",
+        "./assets/images/projectedit.jpg",
+        "./assets/images/prjectdel.jpg",
     ];
 
     const GoPrev = ()=> {
@@ -28,7 +27,6 @@ const TeamProject = () => {
         );
     }
 
-    const navigate = useNavigate();
 
     return (
         <TeamProjectWrap>

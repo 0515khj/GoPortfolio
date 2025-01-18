@@ -1,19 +1,16 @@
 import React from 'react';
 import { CarMainWrap } from './carInfoStyle';
-import { useNavigate } from 'react-router-dom';
 import { Carbg } from '../Carbg';
 
 const CarMain = () => {
     Carbg();
-    const navigate = useNavigate();
 
     return (
         <CarMainWrap>
              <div className="inner">
                
                 <div className="imageWrapper">
-                  {/* <img src="/assets/images/main.png" alt="" /> */}
-                  <img src="/assets/images/main1.jpg" alt="" />
+                  <img src="./assets/images/main1.jpg" alt="" />
                 </div>
 
                 <div className='info'>

@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import { TeamFindWrap, TeamlogWrap, TeamProfileWrap, TeamSpaceWrap } from './teamInfoStyle';
+import { TeamSpaceWrap } from './teamInfoStyle';
 import { Teambg } from '../Teambg';
-import { useNavigate } from 'react-router-dom';
 import { FaChevronRight ,FaChevronLeft } from "react-icons/fa";
 
 const TeamSpace = () => {
@@ -10,9 +9,9 @@ const TeamSpace = () => {
     const [currentimg , setCurrentimg] =useState(0);
 
     const img = [
-        "/assets/images/space.jpg",
-        "/assets/images/spaceadd.jpg",
-        "/assets/images/spaceedit.jpg",
+        "./assets/images/space.jpg",
+        "./assets/images/spaceadd.jpg",
+        "./assets/images/spaceedit.jpg",
     ];
 
     const GoPrev = ()=> {
@@ -27,7 +26,6 @@ const TeamSpace = () => {
         );
     }
 
-    const navigate = useNavigate();
 
     return (
         <TeamSpaceWrap>

@@ -1,18 +1,16 @@
 import React from 'react';
 import { CarSellWrap } from './carInfoStyle';
-import { useNavigate } from 'react-router-dom';
 import { Carbg } from '../Carbg';
 
 const CarSell = () => {
     Carbg();
-    const navigate = useNavigate();
 
     return (
         <CarSellWrap>
              <div className="inner">
                
                 <div className="imageWrapper">
-                  <img src="/assets/images/sell.png" alt="" />
+                  <img src="./assets/images/sell.png" alt="" />
                 </div>
 
                 <div className='info'>

@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
-import { ActiveSprintWrap, TeamFindWrap, TeamlogWrap, TeamProfileWrap, TeamSpaceWrap } from './teamInfoStyle';
+import { ActiveSprintWrap  } from './teamInfoStyle';
 import { Teambg } from '../Teambg';
-import { useNavigate } from 'react-router-dom';
-import { FaChevronRight ,FaChevronLeft } from "react-icons/fa";
 
 const ActiveSprint = () => {
     Teambg();
@@ -10,31 +8,15 @@ const ActiveSprint = () => {
     const [currentimg , setCurrentimg] =useState(0);
 
     const img = [
-        "/assets/images/sprint.jpg",
+        "./assets/images/sprint.jpg",
     ];
-
-    const GoPrev = ()=> {
-        setCurrentimg((previmg)=>
-            previmg === 0 ? img.length -1 : previmg - 1
-        );
-    };
-
-    const GoNext = ()=> {
-        setCurrentimg((previmg)=>
-            previmg ===  img.length -1 ? 0 : previmg + 1
-        );
-    }
-
-    const navigate = useNavigate();
 
     return (
         <ActiveSprintWrap>
              <div className="inner">
                
                 <div className="imageWrapper">
-                  <img src={img[currentimg]} alt="WBS 관련 이미지" />
-                  <button className='prevBtn' onClick={GoPrev}><FaChevronLeft /></button>
-                  <button className='nextBtn' onClick={GoNext}><FaChevronRight /></button>
+                  <img src={img[currentimg]} alt="" />
                 </div>
 
                 <div className='info'>

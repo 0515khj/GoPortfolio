@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { TeamToastWrap } from './teamtoastStyle';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { Teambg } from './Teambg';
 import { AiOutlineSearch } from "react-icons/ai";
 import TeamModal from './TeamModal';
@@ -10,7 +10,6 @@ const TeamToast = () => {
     Teambg();
 
     const [showModal, setShowModal]= useState(false);
-    const navigate = useNavigate();
 
     const openTeamModal = () =>{
       setShowModal(true);
@@ -95,7 +94,7 @@ const TeamToast = () => {
             </div> {/* left end */}
 
             <div className="right">
-                <img src="/assets/images/cover.png" alt="" />
+                <img src="./assets/images/cover.png" alt="" />
             </div> {/* right end  */}
 
             </div>

@@ -5,14 +5,13 @@ import { Carbg } from '../Carbg';
 
 const CarJoin = () => {
     Carbg();
-    const navigate = useNavigate();
 
     return (
         <TeamJoinWrap>
              <div className="inner">
                
                 <div className="imageWrapper">
-                  <img src="/assets/images/carjoin.png" alt="" />
+                  <img src="./assets/images/carjoin.png" alt="" />
                 </div>
 
                 <div className='info'>

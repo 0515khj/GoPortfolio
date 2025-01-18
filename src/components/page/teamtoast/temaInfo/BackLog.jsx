@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import { ActiveSprintWrap, TeamFindWrap, TeamlogWrap, TeamProfileWrap, TeamSpaceWrap } from './teamInfoStyle';
+import { ActiveSprintWrap } from './teamInfoStyle';
 import { Teambg } from '../Teambg';
-import { useNavigate } from 'react-router-dom';
 import { FaChevronRight ,FaChevronLeft } from "react-icons/fa";
 
 const BackLog = () => {
@@ -10,10 +9,10 @@ const BackLog = () => {
     const [currentimg , setCurrentimg] =useState(0);
 
     const img = [
-        "/assets/images/back.jpg",
-        "/assets/images/back2.jpg",
-        "/assets/images/back3.jpg",
-        "/assets/images/back4.jpg",
+        "./assets/images/back.jpg",
+        "./assets/images/back2.jpg",
+        "./assets/images/back3.jpg",
+        "./assets/images/back4.jpg",
     ];
 
     const GoPrev = ()=> {
@@ -28,7 +27,6 @@ const BackLog = () => {
         );
     }
 
-    const navigate = useNavigate();
 
     return (
         <ActiveSprintWrap>

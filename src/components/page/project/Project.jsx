@@ -24,7 +24,7 @@ const Project = () => {
         <Link to={'/team'}>
           <div className="category">팀 프로젝트</div>
           <div className="date">2024.11~2024.12</div>
-          <img src="/assets/images/cover.png" alt="Pedal" className="icon" />
+          <img src="./assets/images/cover.png" alt="Pedal" className="icon" />
           <div className="title">TeamToast</div>
           <div className="description">
             프론트엔드 & 백엔드<br />
@@ -37,7 +37,7 @@ const Project = () => {
         <Link to={'/car'}>
           <div className="category">팀 프로젝트</div>
           <div className="date">2024.10~2024.10</div>
-          <img src="/assets/images/koscar.png" alt="DDV" className="icon" />
+          <img src="./assets/images/koscar.png" alt="DDV" className="icon" />
           <div className="title">KOSCAR</div>
           <div className="description">
             프론트엔드 & 백엔드<br />
@@ -49,7 +49,7 @@ const Project = () => {
         <div className="project-item">
           <div className="category">개인 프로젝트</div>
           <div className="date">2023.11~2023.12</div>
-          <img src="/assets/images/sudden.jpg" alt="Thanks for Coming" className="icon" />
+          <img src="./assets/images/sudden.jpg" alt="Thanks for Coming" className="icon" />
           <div className="title">Sudden Attack</div>
           <div className="description">
             프론트엔드<br />

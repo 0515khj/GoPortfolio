@@ -1,18 +1,16 @@
 import React from 'react';
-import { TeamFindWrap, TeamlogWrap } from './teamInfoStyle';
+import { TeamFindWrap,  } from './teamInfoStyle';
 import { Teambg } from '../Teambg';
-import { useNavigate } from 'react-router-dom';
 
 const TeamFind = () => {
     Teambg();
-    const navigate = useNavigate();
 
     return (
         <TeamFindWrap>
              <div className="inner">
                
                 <div className="imageWrapper">
-                  <img src="/assets/images/find_resized.jpg" alt="WBS 관련 이미지" />
+                  <img src="./assets/images/find_resized.jpg" alt="WBS 관련 이미지" />
                 </div>
 
                 <div className='info'>

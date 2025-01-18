@@ -8,7 +8,7 @@ const CarEdit = () => {
     const [currentimg , setCurrentimg] =useState(0);
 
     const img = [
-        "/assets/images/edit.png",
+        "./assets/images/edit.png",
     ];
 
 

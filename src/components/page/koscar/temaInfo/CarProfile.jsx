@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { TeamFindWrap, TeamlogWrap, TeamProfileWrap } from './carInfoStyle';
+import { TeamProfileWrap } from './carInfoStyle';
 import { useNavigate } from 'react-router-dom';
 import { FaChevronRight ,FaChevronLeft } from "react-icons/fa";
 import { Carbg } from '../Carbg';
@@ -10,8 +10,8 @@ const CarProfile = () => {
     const [currentimg , setCurrentimg] =useState(0);
 
     const img = [
-        "/assets/images/mypage1.png",
-        "/assets/images/mypage2.png",
+        "./assets/images/mypage1.png",
+        "./assets/images/mypage2.png",
     ];
 
     const GoPrev = ()=> {

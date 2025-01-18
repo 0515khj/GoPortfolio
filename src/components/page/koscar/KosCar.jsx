@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { KosCarWrap } from './koscarStyle';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { Carbg } from './Carbg';
 import { AiOutlineSearch } from "react-icons/ai";
 import TeamModal from './CarModal';
@@ -10,7 +10,6 @@ const KosCar = () => {
     Carbg();
 
     const [showModal, setShowModal]= useState(false);
-    const navigate = useNavigate();
 
     const openTeamModal = () =>{
       setShowModal(true);
@@ -89,7 +88,7 @@ const KosCar = () => {
             </div> {/* left end */}
 
             <div className="right">
-                <img src="/assets/images/koscar.png" alt="" />
+                <img src="./assets/images/koscar.png" alt="" />
             </div> {/* right end  */}
 
             </div>

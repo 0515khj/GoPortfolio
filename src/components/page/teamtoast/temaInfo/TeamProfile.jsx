@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import { TeamFindWrap, TeamlogWrap, TeamProfileWrap } from './teamInfoStyle';
+import {  TeamProfileWrap } from './teamInfoStyle';
 import { Teambg } from '../Teambg';
-import { useNavigate } from 'react-router-dom';
 import { FaChevronRight ,FaChevronLeft } from "react-icons/fa";
 
 const TeamProfile = () => {
@@ -10,8 +9,8 @@ const TeamProfile = () => {
     const [currentimg , setCurrentimg] =useState(0);
 
     const img = [
-        "/assets/images/profile.jpg",
-        "/assets/images/profileFind.jpg"
+        "./assets/images/profile.jpg",
+        "./assets/images/profileFind.jpg"
     ];
 
     const GoPrev = ()=> {
@@ -26,7 +25,6 @@ const TeamProfile = () => {
         );
     }
 
-    const navigate = useNavigate();
 
     return (
         <TeamProfileWrap>
