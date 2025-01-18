@@ -38,7 +38,8 @@ const App = () => {
   return (
     <>
     <GlobalStyle/>
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router>
+    {/* <Router basename={process.env.PUBLIC_URL}> */}
       <Routes>
           {/* 기본 레이아웃 */}
           <Route path='/' element={<Layout/>}>
