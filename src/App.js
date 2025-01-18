@@ -1,6 +1,6 @@
 import React from 'react';
 import Intro from './components/page/intro/Intro';
-import {BrowserRouter,Route,Routes} from 'react-router-dom'
+import {HashRouter as Router,Route,Routes} from 'react-router-dom'
 import Layout from './components/Layout';
 import GlobalStyle from './components/style/GlobalStyle';
 import Project from './components/page/project/Project';
@@ -38,7 +38,7 @@ const App = () => {
   return (
     <>
     <GlobalStyle/>
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <Router basename={process.env.PUBLIC_URL}>
       <Routes>
           {/* 기본 레이아웃 */}
           <Route path='/' element={<Layout/>}>
@@ -81,7 +81,7 @@ const App = () => {
         </Route>
 
       </Routes>
-    </BrowserRouter>
+    </Router>
     </>
   );
 };
