@@ -37,31 +37,31 @@ const TeamSidebar = () => {
                          onClick={()=> cssClick('login')}
                          className={pick === 'login' ? 'active' : ''}
                         >
-                        <li>로그인</li>
+                        <li>로그인(담당)</li>
                         </Link>
                         <Link to={'/lay/teamjoin'}
                          onClick={()=> cssClick('join')}
                          className={pick === 'join' ? 'active' : ''}
                         >
-                        <li>회원가입</li>
+                        <li>회원가입(담당)</li>
                         </Link>
                         <Link to={'/lay/teamfind'}
                          onClick={()=> cssClick('find')}
                          className={pick === 'find' ? 'active' : ''}
                         >
-                        <li>비밀번호 찾기</li>
+                        <li>비밀번호 찾기(담당)</li>
                         </Link>
                         <Link to={'/lay/teamprofile'}
                          onClick={()=> cssClick('profile')}
                          className={pick === 'profile' ? 'active' : ''}
                         >
-                        <li>프로필</li>
+                        <li>프로필(담당)</li>
                         </Link>
                         <Link to={'/lay/teamspace'}
                          onClick={()=> cssClick('space')}
                          className={pick === 'space' ? 'active' : ''}
                         >
-                        <li>스페이스</li>
+                        <li>스페이스(담당)</li>
                         </Link>
                         <Link to={'/lay/teamproject'}
                          onClick={()=> cssClick('project')}

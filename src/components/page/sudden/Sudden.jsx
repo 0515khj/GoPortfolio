@@ -1,14 +1,13 @@
-import React, { useEffect, useState } from 'react';
-import { TeamToastWrap } from './teamtoastStyle';
+import React, { useState } from 'react';
+import { SuddenWrap } from './suddenStyle';
 import { Link } from 'react-router-dom';
-import { Teambg } from './Teambg';
 import { AiOutlineSearch } from "react-icons/ai";
-import TeamModal from './TeamModal';
+import SuddenModal from './SuddenModal';
 import { ModalWrap } from '../intro/introStyle';
+import { Suddenbg } from './Suddenbg';
 
-const TeamToast = () => {
-    Teambg();
-
+const Sudden = () => {
+Suddenbg();
     const [showModal, setShowModal]= useState(false);
 
     const openTeamModal = () =>{
@@ -20,19 +19,19 @@ const TeamToast = () => {
     }
 
     return (
-        <TeamToastWrap>
+        <SuddenWrap>
             <div className="inner">
 
                 <div className="left">
                 <div className="header">
-                <h1>TeamToast</h1>
-                <span>유연한 업무관리 협업 플랫폼</span>
+                <h1>SuddenAttak</h1>
+                <span>게임 페이지 쇼핑몰 버전</span>
                 </div>
                 <div className="info">
 
                   <div className="row">
                     <p>개발 기간</p>
-                    <span>2024.11 ~ 2024.12</span>
+                    <span>2023.11 ~ 2023.12</span>
                   </div>
 
                   <div className="row">
@@ -42,7 +41,7 @@ const TeamToast = () => {
 
                   <div className="row">
                     <p>개발 인원</p>
-                    <span>5명 (팀 프로젝트)</span>
+                    <span>1명 (개인 프로젝트)</span>
                   </div> 
 
                 </div>{/* info end */}
@@ -51,26 +50,14 @@ const TeamToast = () => {
             <h2>개발 환경</h2> {/* 개발 환경 구분 텍스트 */}
             <div className="row">
               <p>언어</p>
-              <span>HTML/CSS, TypeScript, JavaScript</span>
+              <span>HTML/CSS, JavaScript</span>
             </div>
             <div className="row">
               <p>프레임워크 & 라이브러리</p>
-              <span>React.js, Node.js, Recoil, styled-components, Express.js</span>
+              <span>React.js, styled-components , Redux</span>
             </div>
-            <div className="row">
-              <p>데이터베이스</p>
-              <span>MySQL</span>
-            </div>
-            <div className="row">
-              <p>도구</p>
-              <span>
-                Docker, Nginx, ESLint
-              </span>
-            </div>
-            <div className="row">
-              <p>API & 라이브러리</p>
-              <span>RESTful API (JSON), Axios, dotenv</span>
-            </div>
+           
+           
           </div>
           
           <div className='Introduction'>
@@ -83,10 +70,10 @@ const TeamToast = () => {
             </div>
 
             <div className="row">
-                <p>개발 소개</p>
-                <Link to={'/lay/teamWBS'}>
-                <button><i><AiOutlineSearch /></i></button>
-                </Link>
+                <p>개발 소개(리드미)</p>
+                <div>
+                <a href="https://github.com/0515khj/SuddenAttack" target="_blank" rel="">  <button><i><AiOutlineSearch /></i></button></a>
+                </div>
             </div>
 
           </div>
@@ -94,7 +81,7 @@ const TeamToast = () => {
             </div> {/* left end */}
 
             <div className="right">
-                <img src={ `${process.env.PUBLIC_URL}/assets/images/cover.png`} alt="" />
+                <img src={ `${process.env.PUBLIC_URL}/assets/images/sudden.jpg`} alt="" />
             </div> {/* right end  */}
 
             </div>
@@ -102,14 +89,14 @@ const TeamToast = () => {
             {showModal && (
               <ModalWrap>
                 <div className="modal">
-                  <button style={{background:'#038c8c'}} className="close" onClick={closeTeamModal}>X</button>
-                <TeamModal/>
+                  <button style={{background:'#607D8B'}} className="close" onClick={closeTeamModal}>X</button>
+                <SuddenModal/>
               </div>
               </ModalWrap>
             )}
 
-        </TeamToastWrap>
+        </SuddenWrap>
     );
 };
 
-export default TeamToast;
+export default Sudden;

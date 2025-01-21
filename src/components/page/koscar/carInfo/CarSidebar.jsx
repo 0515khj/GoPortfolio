@@ -67,19 +67,19 @@ const CarSidebar = () => {
                          onClick={()=> cssClick('main')}
                          className={pick === 'main' ? 'active' : ''}
                         >
-                        <li>차량 목록</li>
+                        <li>차량 목록(담당)</li>
                         </Link>
                         <Link to={'/carlay/cardetail'}
                          onClick={()=> cssClick('detail')}
                          className={pick === 'detail' ? 'active' : ''}
                         >
-                        <li>상세페이지</li>
+                        <li>상세페이지(담당)</li>
                         </Link>
                         <Link to={'/carlay/caredit'}
                          onClick={()=> cssClick('edit')}
                          className={pick === 'edit' ? 'active' : ''}
                         >
-                        <li>수정페이지</li>
+                        <li>수정페이지(담당)</li>
                         </Link>
                        
                         </ul>

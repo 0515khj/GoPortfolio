@@ -88,7 +88,7 @@ const KosCar = () => {
             </div> {/* left end */}
 
             <div className="right">
-                <img src="./assets/images/koscar.png" alt="" />
+                <img src={ `${process.env.PUBLIC_URL}/assets/images/koscar.png`} alt="" />
             </div> {/* right end  */}
 
             </div>

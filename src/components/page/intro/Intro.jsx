@@ -44,13 +44,14 @@ const Intro = () => {
 
                     <li>
                         한국소프트웨어기술진흥협회(KOSTA)
-                        <p style={{paddingTop:'3px'}}>
+                        <p>
+                            
                         (2024.07.15~2024.12.17)
                         </p>
                     </li>
 
                     <li>이젠 아카데미컴퓨터학원
-                        <p style={{paddingTop:'3px'}}>
+                        <p>
                             (2023.08.17~2023.12.26)
                         </p>
                     </li>

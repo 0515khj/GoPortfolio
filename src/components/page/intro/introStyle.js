@@ -16,7 +16,7 @@ export const IntroWrap = styled.div`
         /* margin: 0 auto;  */
     }
 
-    .box {
+    .box, .box2 {
         background-color: #444;
         border: 2px solid #888;
         border-radius: 10px;
@@ -41,18 +41,16 @@ export const IntroWrap = styled.div`
     }
 
     .box2 {
-        background-color: #444;
-        border: 2px solid #888;
-        border-radius: 10px;
-        padding: 20px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-        text-align: left;
-        height: auto; 
-        opacity: 0;
-        transform: translateX(100%);
-        animation: slideIn 0.5s ease-in-out forwards;
-
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        transition: 0.5s;
         &:hover{
+            &:hover{
+                font-size: 22px;
+            }
             background: #999;
             cursor: pointer;
         }
@@ -83,27 +81,33 @@ export const IntroWrap = styled.div`
     }
 
 
-    .title {
-        font-weight: bold;
-        font-size: 1.2em;
-        margin-bottom: 10px;
-        color: #fff;
-    }
-
+    
     ul {
         list-style: none;
         padding: 0;
         margin: 0;
+
+        .title {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            color: #fff;
+
+        }
+        li {
+            color: #fff;
+            margin: 10px 0;
+            p{
+                    padding-top: 3px;
+                    color: #bdbdbd;
+                }
+        }
     }
 
-    li {
-        color: #fff;
-        margin: 10px 0;
-    }
 
-    @media (max-width: 768px) {
+    /* @media (max-width: 768px) {
         grid-template-columns: 1fr; 
-    }
+    } */
 `
 
 

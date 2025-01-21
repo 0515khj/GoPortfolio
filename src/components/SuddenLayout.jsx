@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link, Outlet } from 'react-router-dom';
-import TeamSidebar from './page/teamtoast/temaInfo/TeamSidebar';
 import styled from 'styled-components';
 import Header from './header/Header';
+import SuddenSidebar from './page/sudden/suddenInfo/SuddenSidebar';
 
 
 const LayoutWrap = styled.div`
@@ -27,7 +27,6 @@ display: flex;
   .side{
     width: 20%;
     background: #e5e5e5;
-    /* padding: 20px; */
     box-sizing: border-box;
     border-top-left-radius: 8px;
     border-bottom-left-radius:8px;
@@ -48,7 +47,7 @@ display: flex;
       top: 0; 
       font-size: 1.5rem;
       font-weight: bold;
-      color: #038c8c;
+      color: #007bff;
       margin-bottom: 20px;
       background-color: #e5e5e5;
       height : 70px;
@@ -70,17 +69,17 @@ display: flex;
 `;
 
 
-const TeamLayout = () => {
+const SuddenLayout= () => {
     return (
         <div>
             <Header/>
             <LayoutWrap>
                 <ContentWrap>
                 <div className="side">
-                <Link to={'/team'}>
-                <h1>TeamToast</h1>
+                <Link to={'/sudden'}>
+                <h1>SuddenAttack</h1>
                 </Link>
-                <TeamSidebar/>
+                <SuddenSidebar/>
                 </div>
                 <div className="main">
                 <Outlet/>
@@ -91,4 +90,4 @@ const TeamLayout = () => {
     );
 };
 
-export default TeamLayout;
+export default SuddenLayout;

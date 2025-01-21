@@ -9,6 +9,15 @@ export const ProjectWrap = styled.div`
   height: 85vh;
   margin: 20px auto; 
 
+  .spinner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    
+  }
+
   .timeline {
     position: relative;
     width: 90%;

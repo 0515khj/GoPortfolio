@@ -22,16 +22,26 @@ import IssueList from './components/page/teamtoast/temaInfo/IssueList';
 import TimeLine from './components/page/teamtoast/temaInfo/TimeLine';
 import KosCarLayout from './components/KosCarLayout ';
 import KosCar from './components/page/koscar/KosCar';
-import CarWBS from './components/page/koscar/temaInfo/CarWBS';
-import CarDB from './components/page/koscar/temaInfo/CarDB';
-import CarJoin from './components/page/koscar/temaInfo/CarJoin';
-import Carlog from './components/page/koscar/temaInfo/Carlog';
-import CarFind from './components/page/koscar/temaInfo/CarFind';
-import CarProfile from './components/page/koscar/temaInfo/CarProfile';
-import CarSell from './components/page/koscar/temaInfo/CarSell';
-import CarMain from './components/page/koscar/temaInfo/CarMain';
-import CarDetail from './components/page/koscar/temaInfo/CarDetail';
-import CarEdit from './components/page/koscar/temaInfo/CarEdit';
+import CarWBS from './components/page/koscar/carInfo/CarWBS';
+import CarDB from './components/page/koscar/carInfo/CarDB';
+import CarJoin from './components/page/koscar/carInfo/CarJoin';
+import Carlog from './components/page/koscar/carInfo/Carlog';
+import CarFind from './components/page/koscar/carInfo/CarFind';
+import CarProfile from './components/page/koscar/carInfo/CarProfile';
+import CarSell from './components/page/koscar/carInfo/CarSell';
+import CarMain from './components/page/koscar/carInfo/CarMain';
+import CarDetail from './components/page/koscar/carInfo/CarDetail';
+import CarEdit from './components/page/koscar/carInfo/CarEdit';
+import Sudden from './components/page/sudden/Sudden';
+import SuddenInfo from './components/page/sudden/suddenInfo/SuddenInfo';
+import SuddenLayout from './components/SuddenLayout';
+import SuddenClan from './components/page/sudden/suddenInfo/SuddenClan';
+import Suddenlog from './components/page/sudden/suddenInfo/Suddenlog';
+import SuddenJoin from './components/page/sudden/suddenInfo/SuddenJoin';
+import SuddenMarket from './components/page/sudden/suddenInfo/SuddenMarket';
+import SuddenNotice from './components/page/sudden/suddenInfo/SuddenNotice';
+import SuddenCustomer from './components/page/sudden/suddenInfo/SuddenCustomer';
+import SuddenCart from './components/page/sudden/suddenInfo/SuddenCart';
 
 const App = () => {
 
@@ -39,7 +49,6 @@ const App = () => {
     <>
     <GlobalStyle/>
     <Router>
-    {/* <Router basename={process.env.PUBLIC_URL}> */}
       <Routes>
           {/* 기본 레이아웃 */}
           <Route path='/' element={<Layout/>}>
@@ -47,6 +56,7 @@ const App = () => {
             <Route path='/project' element={<Project/>}/>
             <Route path='/team' element={<TeamToast/>}/>
             <Route path='/car' element={<KosCar/>}/>
+            <Route path='/sudden' element={<Sudden/>}/>
           </Route>
 
           {/* TeamToast 레이아웃 */}
@@ -79,6 +89,19 @@ const App = () => {
           <Route path='carmain' element={<CarMain/>}/>
           <Route path='cardetail' element={<CarDetail/>}/>
           <Route path='caredit' element={<CarEdit/>}/>
+        </Route>
+
+        {/* Sudden 레이아웃 */}
+        <Route path='/suddenlay' element={<SuddenLayout/>}>
+          <Route path='info' element={<SuddenInfo/>}/>
+          <Route path='clan' element={<SuddenClan/>}/>
+          <Route path='suddenlog' element={<Suddenlog/>}/>
+          <Route path='suddenjoin' element={<SuddenJoin/>}/>
+          <Route path='market' element={<SuddenMarket/>}/>
+          <Route path='notice' element={<SuddenNotice/>}/>
+          <Route path='customer' element={<SuddenCustomer/>}/>
+          <Route path='cart' element={<SuddenCart/>}/>
+
         </Route>
 
       </Routes>

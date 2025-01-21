@@ -1,8 +1,7 @@
 import React from 'react';
 import { Link, Outlet } from 'react-router-dom';
 import styled from 'styled-components';
-import TeamHeader from './header/TeamHeader';
-import CarSidebar from './page/koscar/temaInfo/CarSidebar';
+import CarSidebar from './page/koscar/carInfo/CarSidebar';
 import Header from './header/Header';
 
 
