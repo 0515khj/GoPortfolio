@@ -42,6 +42,8 @@ import SuddenMarket from './components/page/sudden/suddenInfo/SuddenMarket';
 import SuddenNotice from './components/page/sudden/suddenInfo/SuddenNotice';
 import SuddenCustomer from './components/page/sudden/suddenInfo/SuddenCustomer';
 import SuddenCart from './components/page/sudden/suddenInfo/SuddenCart';
+import MyrealLayout from './components/MyrealLayout';
+import MyrealTrip from './components/page/myreal/MyrealTrip';
 
 const App = () => {
 
@@ -57,6 +59,7 @@ const App = () => {
             <Route path='/team' element={<TeamToast/>}/>
             <Route path='/car' element={<KosCar/>}/>
             <Route path='/sudden' element={<Sudden/>}/>
+            <Route path='/myreal' element={<MyrealTrip/>}/>
           </Route>
 
           {/* TeamToast 레이아웃 */}
@@ -93,15 +96,20 @@ const App = () => {
 
         {/* Sudden 레이아웃 */}
         <Route path='/suddenlay' element={<SuddenLayout/>}>
-          <Route path='info' element={<SuddenInfo/>}/>
+          {/* <Route path='info' element={<SuddenInfo/>}/>
           <Route path='clan' element={<SuddenClan/>}/>
           <Route path='suddenlog' element={<Suddenlog/>}/>
           <Route path='suddenjoin' element={<SuddenJoin/>}/>
           <Route path='market' element={<SuddenMarket/>}/>
           <Route path='notice' element={<SuddenNotice/>}/>
           <Route path='customer' element={<SuddenCustomer/>}/>
-          <Route path='cart' element={<SuddenCart/>}/>
+          <Route path='cart' element={<SuddenCart/>}/> */}
+        </Route>
 
+        {/* MyrealTrip 레이아웃 */}
+        <Route path='/mylay' element={<MyrealLayout/>}>
+          {/* <Route path='customer' element={<SuddenCustomer/>}/> */}
+          
         </Route>
 
       </Routes>

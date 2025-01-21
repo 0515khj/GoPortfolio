@@ -7,6 +7,13 @@ const Project = () => {
 
     const [loading , setLoading] = useState(true);
 
+    const [projectText , setProjectText] = useState(false);
+
+    const textMove = (text) =>{
+      return text.split('').map((item,idx)=>(
+        <span key={idx} style={{animationDelay:`${ idx * 0.3}s`}}>{item}</span>
+      ))
+    }
 
     useEffect(() => {
             document.body.style.backgroundColor = '#333';
@@ -32,14 +39,19 @@ const Project = () => {
     
     return (
         <ProjectWrap>
-             <div className="timeline">
-        <div className="timeline-point" style={{ left: '12%' }}></div>
-        <div className="timeline-point" style={{ left: '50%' }}></div>
-        <div className="timeline-point" style={{ left: '87%' }}></div>
+      <div className={`text ${projectText ? 'move' : ''}`}>
+        <span style={{marginRight:'50px'}}>{textMove('PROJECT')}</span>
+        <span>{textMove('TIMELINE')}</span>
       </div>
+             <div className="timeline">
+        <div className="timeline-point" style={{ left: '9%' }}></div>
+        <div className="timeline-point" style={{ left: '36%' }}></div>
+        <div className="timeline-point" style={{ left: '64%' }}></div>
+        <div className="timeline-point" style={{ left: '91%' }}></div>
+      </div>
+      
     
       <div className="projects">
-    
         <div className="project-item">
         <Link to={'/team'}>
           <div className="category">팀 프로젝트</div>
@@ -75,6 +87,21 @@ const Project = () => {
           <div className="description">
             프론트엔드<br />
             게임 페이지 쇼핑몰 버전
+          </div>
+        </Link>
+        </div>
+
+        <div className="project-item">
+        <Link to={'/myreal'}>
+          <div className="category">팀 프로젝트</div>
+          <div className="date">2023.10~2023.10</div>
+          <div className="myimg">
+          <img src={ `${process.env.PUBLIC_URL}/assets/images/my.png`} alt="" className="icon" />
+          </div>
+          <div className="title">Myrealtrip</div>
+          <div className="description">
+            프론트엔드(JavaScript)<br />
+            여행사 홈페이지 
           </div>
         </Link>
         </div>
