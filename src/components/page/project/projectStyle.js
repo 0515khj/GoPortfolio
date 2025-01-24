@@ -129,8 +129,12 @@ export const ProjectWrap = styled.div`
       }
 
       .icon {
-        margin: 15px 0;
-        width: 180px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 15px auto;
+        width: 100%;
+        max-width: 180px;
         height: 150px;
         border-radius: 8px;
       }
@@ -149,4 +153,20 @@ export const ProjectWrap = styled.div`
 
     }
   }
+  @media only screen and (max-width: 400px) {
+    padding: 20px;
+    overflow-y: auto;
+    .text { 
+      font-size:20px;
+      margin-bottom: 30px;
+    }
+    .project-item {
+      margin-bottom: 50px;
+    }
+    
+  .myimg{
+    max-height: 50%;
+  }
+  }
+
 `

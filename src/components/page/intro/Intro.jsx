@@ -35,6 +35,7 @@ const Intro = () => {
                     <li className="title">ABOUT</li>
                     <li>김현진</li>
                     <li>1996.05.15</li>
+                    <li>01065439118</li>
                     {/* <li>부천시 원미구</li> */}
                 </ul>
             </div>
@@ -45,7 +46,6 @@ const Intro = () => {
                     <li>
                         한국소프트웨어기술진흥협회(KOSTA)
                         <p>
-                            
                         (2024.07.15~2024.12.17)
                         </p>
                     </li>

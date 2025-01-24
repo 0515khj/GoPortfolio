@@ -60,7 +60,6 @@ background-color: #f9f9f9;
         .row {
           display: flex;
           width: 100%;
-          /* justify-content: space-between; */
           align-items: center;
           margin-bottom: 10px;
 
@@ -138,14 +137,58 @@ background-color: #f9f9f9;
       display: flex;
       justify-content: center;
       align-items: center;
+      width: 100%;
+      height:100%;
       img {
         width: 100%;
         max-width: 600px; /* 최대 이미지 크기 */
-        height: auto;
+        max-height:600px;
         border-radius: 8px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       }
     }
+  }
+
+  @media only screen and (max-width: 400px) {
+    overflow-y: auto;
+    padding: 0;
+
+    .inner{
+      flex-direction: column;
+      .left {
+        .header{
+          flex-direction: column;
+          h1 {
+          font-size: 1.5rem;
+          width: 100px;
+          &::after{
+                background: #fff; 
+          }
+          }
+        span{
+            margin-left: 0px;
+            color: #333;
+            line-height:0;
+            margin: 10px 0 20px;
+            font-size: 15px;
+        }
+      }
+    }
+    .right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height:100%;
+      img {
+        width: 100%;
+        max-width: 600px; /* 최대 이미지 크기 */
+        max-height:600px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
   }
 
 `

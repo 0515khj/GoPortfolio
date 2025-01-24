@@ -17,6 +17,9 @@ export const IntroWrap = styled.div`
     }
 
     .box, .box2 {
+        width: 100%;
+        min-width: 160px;
+        min-height: 160px;
         background-color: #444;
         border: 2px solid #888;
         border-radius: 10px;
@@ -98,16 +101,14 @@ export const IntroWrap = styled.div`
             color: #fff;
             margin: 10px 0;
             p{
+                    white-space: normal;
+                    word-wrap: break-word;
                     padding-top: 3px;
                     color: #bdbdbd;
                 }
         }
     }
-
-
-    /* @media (max-width: 768px) {
-        grid-template-columns: 1fr; 
-    } */
+   
 `
 
 

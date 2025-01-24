@@ -28,10 +28,15 @@ export const HeaderWrap = styled.div`
         li{ font-size:25px; width:100%;
           
           &:hover {color:#fff;}
-
-          
         }
       }
+
+      @media only screen and (max-width:400px) {
+          ul{
+            gap: 100px;
+          }
+      }
+      
 }
 
 
