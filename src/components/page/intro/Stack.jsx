@@ -25,7 +25,7 @@ const Stack = () => {
     
     const Deployment = [
         {name:'Docker', img:`${process.env.PUBLIC_URL}/assets/images/docker.jpg`},
-        {name:'AWS', img:`${process.env.PUBLIC_URL}/assets/images/aws.jpg`},
+        // {name:'AWS', img:`${process.env.PUBLIC_URL}/assets/images/aws.jpg`},
         
     ]
     

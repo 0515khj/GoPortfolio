@@ -51,10 +51,6 @@ MyrealTripbg();
               <p>언어</p>
               <span>HTML/CSS, JavaScript</span>
             </div>
-            {/* <div className="row">
-              <p>프레임워크 & 라이브러리</p>
-              <span></span>
-            </div> */}
            
            
           </div>
