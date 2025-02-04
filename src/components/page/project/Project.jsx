@@ -5,7 +5,6 @@ import { ClimbingBoxLoader, PacmanLoader } from 'react-spinners';
 
 const Project = () => {
 
-    const [loading , setLoading] = useState(true);
 
     const [projectText , setProjectText] = useState(false);
 
@@ -17,24 +16,11 @@ const Project = () => {
 
     useEffect(() => {
             document.body.style.backgroundColor = '#333';
-            const spinnerTimeout = setTimeout(()=>{
-                setLoading(false);
-            },1000)
+           
             return () => {
               document.body.style.backgroundColor = ''; 
-              clearTimeout(spinnerTimeout);
             };
           }, []);
-    
-    if(loading){
-      return(
-        <ProjectWrap>
-         <div className="spinner">
-          <PacmanLoader color="#333" size={30} />
-        </div>
-      </ProjectWrap>
-      )
-    }
       
     
     return (
