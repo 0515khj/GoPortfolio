@@ -200,7 +200,7 @@ export const ModalWrap = styled.div`
     }
 `
 export const StackWrap = styled.div`
-
+    width: 800px;
         .stack-group {
     font-size: 1.5rem;
     font-weight: bold;
@@ -210,11 +210,11 @@ export const StackWrap = styled.div`
     text-align: left;
 }
 
-    .stackItem.styled-small img {
-    width: 100%; 
-    height: auto;
-    max-height :60px;
-}
+        .stackItem.styled-small img {
+        width: 100%; 
+        height: auto;
+        max-height :60px;
+    }
         
         .stackItem{
             box-sizing: border-box;
@@ -238,6 +238,24 @@ export const StackWrap = styled.div`
             .stack-group{
                 margin-top: 30px;
             }
+
+        }
+
+        @media only screen and (max-width: 400px){
+            width: 100%;
+            max-width: 400px;
+            height: 500px;
+            overflow: auto;
+
+        .stackItem{    
+            img{
+                border-radius: 8px;
+                width: 100%;
+                height: 100%;
+                max-height: 75px;
+                margin-bottom: 5px;
+            }
+        }
 
         }
 

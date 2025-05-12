@@ -9,6 +9,13 @@ export const ProjectWrap = styled.div`
   height: 85vh;
   margin: 20px auto; 
 
+  animation: fade 2s forwards;
+
+  @keyframes fade {
+    from{ opacity:0; }
+    to{ opacity:1; }
+  }
+
 
   
 .text{

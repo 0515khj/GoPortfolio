@@ -16,9 +16,11 @@ const Project = () => {
 
     useEffect(() => {
             document.body.style.backgroundColor = '#333';
-           
+            const spinnerTimeout = setTimeout(()=>{
+            },1000)
             return () => {
               document.body.style.backgroundColor = ''; 
+              clearTimeout(spinnerTimeout);
             };
           }, []);
       

@@ -35,7 +35,7 @@ const Intro = () => {
                     <li className="title">ABOUT</li>
                     <li>김현진</li>
                     <li>1996.05.15</li>
-                    <li>01065439118</li>
+                    <li>010.6543.9118</li>
                     {/* <li>부천시 원미구</li> */}
                 </ul>
             </div>
